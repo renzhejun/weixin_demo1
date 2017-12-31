@@ -1,0 +1,12 @@
+
+.re_text
+{
+   margin-top:200rpx;
+   margin-left: 180rpx;
+   margin-right: 180rpx;
+}
+.re_button{
+  margin-top:200rpx;
+  width: 200rpx;
+  height: 90rpx; 
+}

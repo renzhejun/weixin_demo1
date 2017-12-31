@@ -1,0 +1,2 @@
+<view class="re_text" wx:for="{{post}}" wx:for-item="i">{{i}}号同学请来取餐</view>
+<button class="re_button" bindtap="refresh">刷新</button>

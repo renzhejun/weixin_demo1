@@ -1,0 +1,24 @@
+<scroll-view scroll-y="true" class="container" bindscrolltoupper="upper" upper-threshold="10" lower-threshold="5" bindscrolltolower="lower" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+
+  <block wx:for="{{centerType}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}">
+    <view class="feed-item">
+      <view class="feed-source">
+        <a class="">
+          <view class="avatar">
+            <image src="{{item.head}}"></image>
+          </view>
+          <text class="title_style">{{item.nickname}}的评论</text>
+        </a>
+      </view>
+      <view class="answer-body">
+        <text class="answer-txt">{{item.content}}</text>
+        <view class="answer-actions">
+          <text class="details_style">{{item.star}}星 · 评论时间:{{item.create_time}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</scroll-view>
+<view class="order" bindtap="myorder">
+  <image class="order-icon" src="/pages/image/o1.png" />
+</view>

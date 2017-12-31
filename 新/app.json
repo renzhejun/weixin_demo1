@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/first/first",
+    "pages/comment/comment",
+    "pages/divide/divide",
+    "pages/custom/custom",
+    "pages/showcomment/showcomment",
+    "pages/new_dishes/new_dishes"
+  ],
+  "window": {
+    "backgroundColor": "#808080",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ADD8E6",
+    "navigationBarTitleText": "智能餐厅",
+    "navigationBarTextStyle": "white"
+  },
+  "debug": true,
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/first/first",
+        "selectedIconPath": "pages/image/f2.png",
+        "iconPath": "pages/image/f1.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/showcomment/showcomment",
+        "selectedIconPath": "pages/image/c2.png",
+        "iconPath": "pages/image/c1.png",
+        "text": "评论"
+      },
+      {
+        "pagePath": "pages/divide/divide",
+        "selectedIconPath": "pages/image/d2.png",
+        "iconPath": "pages/image/d1.png",
+        "text": "叫号"
+      },
+      {
+        "pagePath": "pages/custom/custom",
+        "selectedIconPath": "pages/image/m2.png",
+        "iconPath": "pages/image/m1.png",
+        "text": "管理"
+      }
+    ]
+  }
+}

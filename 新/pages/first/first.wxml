@@ -1,0 +1,19 @@
+<!--pages/first/first.wxml-->
+<swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+  <block wx:for="{{movies}}" wx:key="{{src}}" wx:for-index="index">
+    <swiper-item>
+      <image src="{{item.src}}" class="slide-image" mode="aspectFill" />
+    </swiper-item>
+  </block>
+</swiper>
+<block wx:for="{{dishesType}}" wx:key="{{title}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}">
+<view class="container">
+   <view class="left_content">
+      <image src="{{item.picture}}" class="left_content_img"></image>
+   </view>
+   <view class="right_content_title">菜名:{{item.title}}</view>
+   <view class="right_line">——————————————</view>
+   <view class="right_content">{{item.content}}</view>
+   <view class="right_details">推荐指数:{{item.star}}星  价格:{{item.price}} {{item.create_time}}</view>
+</view>
+  </block>

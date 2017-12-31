@@ -1,0 +1,23 @@
+<view class="box">
+  <view class='form'>
+    <form bindsubmit='submit'>
+      <view class="container1">
+        <view class="row">
+          <input type="text" name="title" placeholder="请填写菜名"/>
+        </view>
+        <view class="row">
+          <input type="text" name="price" placeholder="请填写价格"/>
+        </view>
+      </view>
+      <textarea class='{{error==1?"error":""}} form-text' placeholder='请填写您的推荐理由' name='content' />
+      <view class='star'>
+        <view class='star-item' wx:for='{{starClicked}}' wx:key='index' data-num='{{index+1}}' bindtap='changeStar'>
+          <image class='star-img' src='{{item==0?"/pages/image/m.png":"/pages/image/q.png"}}'>
+          </image>
+        </view>
+      </view>
+      <button bindtap='chooseimage'>添加图片</button>
+      <button class='form-button' form-type='submit'>提交</button>
+    </form>
+  </view>
+</view>

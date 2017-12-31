@@ -1,0 +1,14 @@
+<view class="box">
+  <view class='form'>
+    <form bindsubmit='submit'>
+      <textarea class='{{error==1?"error":""}} form-text' placeholder='感谢您的评价，我们将加倍努力!' name='content' />
+      <view class='star'>
+        <view class='star-item' wx:for='{{starClicked}}' wx:key='index' data-num='{{index+1}}' bindtap='changeStar'>
+          <image class='star-img' src='{{item==0?"/pages/image/m.png":"/pages/image/q.png"}}'>
+          </image>
+        </view>
+      </view>
+      <button class='form-button' form-type='submit'>提交</button>
+    </form>
+  </view>
+</view>
